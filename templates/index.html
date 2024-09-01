@@ -2,54 +2,14 @@
 
 {% block content %}
 
-<div class="container" style="margin-top: 100px;">
-    <style>
-        .form-control {
-            border: 2px solid purple;
-            height: 400px;
-        }
-
-        .form-check-input {
-            border: 1px solid purple;
-            color: purple;
-            background-color: #ba55d3;
-        }
-
-
-        /* Checked switch background color */
-        .form-check-input:checked {
-            background-color: purple;
-            /* Change this to your desired color */
-            border-color: white;
-            /* Change this to match the switch color */
-        }
-        /* Optional: Hover effect for better UX */
-        .form-check-input:hover {
-            cursor: pointer;
-        }
-        .button
-        {
-            color: white;
-            background-color: purple;
-            padding:10px;
-            border: 1px solid purple;
-            width: 200px;
-            align-items: center;
-            border-radius: 50px;
-        }
-        .button:hover
-        {
-            background-color: white;
-            border: 1px solid purple;
-            color: purple;
-        }
-        
-    </style>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<div class="container" style="margin-top: 100px; margin-bottom: 100px;">
     <form action="/analyze" method="post">{% csrf_token %}
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Enter your text here and let Text Utils do the
                 magic</label>
-            <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="5" required></textarea>
+            <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="15" required></textarea>
         </div>
         <div class="form-check form-switch">
             <input class="form-check-input" name="remove_punc" type="checkbox" role="switch"
@@ -76,8 +36,7 @@
             <label class="form-check-label" for="flexSwitchCheckDefault5">Character Counter</label>
         </div>
         <div class="button-container" style="text-align: center;">
-        <button type="submit" class="button">Analyzed Text</button>
-            
+            <button type="submit" class="button">Analyzed Text</button>
         </div>
     </form>
 </div>

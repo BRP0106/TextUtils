@@ -1,0 +1,101 @@
+.navbar {
+    background-color: #fff;
+    height: 90px;
+    margin: 5px;
+    padding: 0.5rem;
+    border-bottom: 4px solid purple;
+}
+
+.nav-link {
+    color: purple;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid purple;
+    color: purple;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: purple;
+    text-align: center;
+    border-top: 4px solid purple;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo .icon {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    /* Light Purple for background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.logo .text {
+    color: purple;
+    /* Dark Purple for 'Text' */
+}
+
+.logo .utils {
+    color: #b266b2;
+    /* Light Purple for 'Utils' */
+}
+
+.form-control {
+    border: 2px solid purple;
+    border-radius: 20px;
+}
+
+.form-check-input {
+    border: 1px solid purple;
+    color: purple;
+    background-color: #ba55d3;
+}
+
+
+/* Checked switch background color */
+.form-check-input:checked {
+    background-color: purple;
+    /* Change this to your desired color */
+    border-color: white;
+    /* Change this to match the switch color */
+}
+/* Optional: Hover effect for better UX */
+.form-check-input:hover {
+    cursor: pointer;
+}
+.button
+{
+    margin-top: 10px;
+    color: white;
+    background-color: purple;
+    padding:10px;
+    border: 1px solid purple;
+    width: 200px;
+    align-items: center;
+    border-radius: 50px;
+}
+.button:hover
+{
+    background-color: white;
+    border: 1px solid purple;
+    color: purple;
+}
